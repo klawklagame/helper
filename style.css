@@ -1,15 +1,15 @@
 /* ==== Custom Fonts ==== */
 @font-face {
     font-family: "FC Krung Thep Light";
-    src: url("https://klawkla.com/content/files/2025/08/FCKrungThep-Light.woff2") format("woff2"),
-         url("https://klawkla.com/content/files/2025/08/FCKrungThep-Light.woff") format("woff");
+    src: url("FCKrungThep-Light.woff2") format("woff2"),
+         url("FCKrungThep-Light.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
     font-family: "FC Maha Nakhon Flat Light";
-    src: url("https://klawkla.com/content/files/2025/08/FCMahaNakhonFlat-Light.woff2") format("woff2"),
-         url("https://klawkla.com/content/files/2025/08/FCMahaNakhonFlat-Light.woff") format("woff");
+    src: url("FCMahaNakhonFlat-Light.woff2") format("woff2"),
+         url("FCMahaNakhonFlat-Light.woff") format("woff");
     font-display: swap;
 }
 
