@@ -71,8 +71,8 @@ body {
 }
 
 .logo {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     border-radius: 12px;
     object-fit: cover;
     flex-shrink: 0; /* Prevent shrinking */
@@ -287,4 +287,10 @@ tbody tr:nth-child(even) {
 
 .footer a:hover {
     color: #8ccbff; /* Lighter accent on hover for teal-300 equivalent */
+}
+
+@media (max-width: 700px) {
+.title {
+    font-size: 24px;
+  }
 }
