@@ -1,0 +1,290 @@
+/* ==== Custom Fonts ==== */
+@font-face {
+    font-family: "FC Krung Thep Light";
+    src: url("https://klawkla.com/content/files/2025/08/FCKrungThep-Light.woff2") format("woff2"),
+         url("https://klawkla.com/content/files/2025/08/FCKrungThep-Light.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FC Maha Nakhon Flat Light";
+    src: url("https://klawkla.com/content/files/2025/08/FCMahaNakhonFlat-Light.woff2") format("woff2"),
+         url("https://klawkla.com/content/files/2025/08/FCMahaNakhonFlat-Light.woff") format("woff");
+    font-display: swap;
+}
+
+:root {
+    --bg: #121212; /* Changed */
+    --card: #16181d;
+    --muted: #9aa3b2;
+    --text: #eef3ff;
+    --accent: #59b3ff;
+    --border: #242834;
+    --gold: #ffd46a;
+    --font-sans: "FC Krung Thep Light", Helvetica, Arial, sans-serif;
+    --font-serif: "FC Maha Nakhon Flat Light", Georgia, Times, serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    overflow-x: hidden
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+/* Container 960px */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Top bar */
+.appbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    backdrop-filter: saturate(140%) blur(6px);
+    padding: 1rem 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Added gap for logo and text */
+}
+
+.appbar-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.appbar-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 32px; /* Changed */
+    margin: 0;
+    font-family: var(--font-serif);
+    font-weight: bold; /* Added */
+}
+
+.subtitle {
+    margin: 0; /* Changed */
+    font-size: 16px; /* Changed */
+    color: var(--muted)
+}
+
+/* Swipe-able carousel (no visible scrollbar) */
+.carousel {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 0 1rem 88px
+}
+
+.carousel {
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+.carousel::-webkit-scrollbar {
+    display: none
+}
+
+.slide {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    max-width: 100%
+}
+
+/* Cards */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px #0006;
+    padding: 1rem
+}
+
+/* Profile header inside each slide */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: .25rem 0 1rem
+}
+
+.avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #2a3348;
+    background: #0e1422
+}
+
+.p-head h2 {
+    margin: 0;
+    font-size: 1.18rem;
+    font-family: var(--font-serif)
+}
+
+.p-head .meta {
+    margin: .15rem 0 0;
+    font-size: .92rem;
+    color: var(--muted)
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: clamp(.82rem, 2.9vw, .95rem)
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(180deg, #1a1d24, #16181d);
+    color: #cfe0ff;
+    text-align: left;
+    padding: .55rem .5rem;
+    border-bottom: 1px solid var(--border)
+}
+
+tbody td {
+    padding: .48rem .5rem;
+    border-bottom: 1px dashed #232836;
+    white-space: nowrap
+}
+
+tbody tr:last-child td {
+    border-bottom: 0
+}
+
+tbody tr:nth-child(odd) {
+    background: #141821
+}
+
+tbody tr:nth-child(even) {
+    background: #12161e
+}
+
+/* Highlights */
+.hl {
+    background: linear-gradient(0deg, #18212e 0%, #1a2230 100%)
+}
+
+.hl b {
+    color: var(--gold)
+}
+
+/* Bottom dock with image buttons */
+.dock {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: .5rem .75rem env(safe-area-inset-bottom);
+    background: linear-gradient(180deg, #0b0d12 0%, #0b0d12ee 60%, #0b0d12ff 100%);
+    border-top: 1px solid var(--border)
+}
+
+.dock-inner {
+    display: flex;
+    gap: .75rem;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+.abtn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: 0 6px 16px #0008
+}
+
+.abtn.active {
+    outline: 2px solid var(--accent)
+}
+
+.abtn img {
+    width: 56px; /* Changed - Smaller images */
+    height: 56px; /* Changed - Smaller images */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: .35rem;
+    border: 1px solid #2a3348;
+    background: #0e1422
+}
+
+.alabel {
+    font-size: .85rem;
+    line-height: 1.1;
+    text-align: center;
+    font-family: var(--font-serif)
+}
+
+.num {
+    font-variant-numeric: tabular-nums
+}
+
+/* Footer styles */
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.875rem; /* 14px */
+    color: var(--muted); /* Gray-500 equivalent */
+    margin-top: 2rem; /* mt-8 equivalent */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    font-weight: 600; /* Semibold equivalent */
+    color: #59b3ff; /* Using --accent for teal-400 equivalent */
+    text-decoration: underline;
+    transition: color 0.15s ease-in-out;
+}
+
+.footer a:hover {
+    color: #8ccbff; /* Lighter accent on hover for teal-300 equivalent */
+}
