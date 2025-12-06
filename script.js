@@ -52,5 +52,44 @@ window.addEventListener('resize', () => {
     goTo(activeIndex);
 });
 
+// Parallax Effect with Debouncing
+let parallaxRaf = null;
+function handleParallax(e) {
+  if (parallaxRaf) return;
+  
+  parallaxRaf = requestAnimationFrame(() => {
+    const shapes = document.querySelectorAll('.bg-shape');
+    if (shapes.length === 0) {
+      parallaxRaf = null;
+      return;
+    }
+
+    shapes.forEach((shape, index) => {
+      const speed = (index + 1) * 20;
+      const xOffset = (window.innerWidth / 2 - e.clientX) / speed;
+      const yOffset = (window.innerHeight / 2 - e.clientY) / speed;
+      const rotate = index === 0 ? -15 : 0;
+      
+      shape.style.transform = `translate(${xOffset}px, ${yOffset}px) rotate(${rotate}deg)`;
+    });
+    
+    parallaxRaf = null;
+  });
+}
+
+document.addEventListener('mousemove', handleParallax, { passive: true });
+
+// Handle window resize for parallax
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    // Reset parallax on resize
+    document.querySelectorAll('.bg-shape').forEach(shape => {
+      shape.style.transform = '';
+    });
+  }, 250);
+}, { passive: true });
+
 // Init
 goTo(0);
