@@ -49,10 +49,11 @@
 }
 
 * { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; }
-
-* { box-sizing: border-box; }
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -60,7 +61,7 @@ body {
   font-family: var(--font-body);
   background: var(--bg);
   /* Atmospheric background - Pink/Purple */
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 0%, rgba(247, 37, 133, 0.15), transparent 60%),
     radial-gradient(circle at 85% 60%, rgba(114, 9, 183, 0.1), transparent 50%),
     radial-gradient(circle at 15% 80%, rgba(67, 97, 238, 0.05), transparent 50%);
@@ -73,6 +74,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 /* Orb effects for atmosphere */
@@ -135,7 +137,7 @@ body {
   max-width: var(--maxw);
   width: 100%;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
   position: relative;
   z-index: 1;
 }
@@ -167,7 +169,7 @@ header {
 
 .brand strong {
   font-family: var(--font-heading);
-  font-size: 48px;
+  font-size: 32px;
   font-style: italic;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -194,7 +196,7 @@ header {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
-    padding: 0 24px 120px; /* Space for dock */
+    padding: 0 20px 120px; /* Space for dock */
     margin: 0 auto 60px;
     max-width: var(--maxw);
     scrollbar-width: none;
@@ -205,7 +207,7 @@ header {
 .slide {
     flex: 0 0 100%;
     scroll-snap-align: center;
-    width: 100%;
+    width: calc(100% - 40px);
 }
 
 /* Cards */
@@ -215,11 +217,13 @@ header {
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--stroke);
     border-radius: var(--radius);
-    padding: 40px;
+    padding: 24px;
+    margin: 0;
     box-shadow: var(--shadow-panel);
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
+    width: calc(100vw - 40px);
 }
 
 .card:hover {
@@ -263,7 +267,7 @@ header {
 
 .p-head h2 {
     font-family: var(--font-heading);
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
     margin: 0;
     color: var(--text);
@@ -292,12 +296,12 @@ table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    font-size: 0.95rem;
+    font-size: 12px;
 }
 
 thead th {
     text-align: left;
-    padding: 12px;
+    padding: 10px 8px;
     color: var(--text-muted);
     font-family: var(--font-interface);
     text-transform: uppercase;
@@ -307,7 +311,7 @@ thead th {
 }
 
 tbody td {
-    padding: 16px 12px;
+    padding: 10px 8px;
     border-bottom: 1px solid rgba(255,255,255,0.03);
     color: var(--text);
 }
@@ -325,7 +329,7 @@ tbody tr:last-child td { border-bottom: none; }
 /* Bottom Dock - Floating Pill */
 .dock {
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(10, 5, 10, 0.8);
@@ -333,42 +337,46 @@ tbody tr:last-child td { border-bottom: none; }
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--stroke);
     padding: 8px;
-    border-radius: 100px;
+    border-radius: 20px;
     z-index: 100;
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    width: auto;
+    width: calc(100% - 40px);
     max-width: 90%;
 }
 
 .dock-inner {
     display: flex;
     gap: 8px;
+    justify-content: space-between;
 }
 
 .abtn {
     background: transparent;
     border: none;
-    border-radius: 100px; /* Pill */
-    padding: 10px 20px;
+    border-radius: 12px;
+    padding: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
     cursor: pointer;
     color: var(--text-muted);
     transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
     text-decoration: none;
+    flex: 1;
+    flex-direction: column;
 }
 
 .abtn img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 6px;
     object-fit: cover;
+    margin: 0;
 }
 
 .alabel {
     font-family: var(--font-interface);
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
     white-space: nowrap;
 }
@@ -415,8 +423,10 @@ footer .support-message {
 footer .links {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 16px;
   margin-bottom: 32px;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer a {
@@ -443,20 +453,73 @@ footer a:hover {
   text-transform: uppercase;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
-  .brand strong { font-size: 32px; }
-  .card { padding: 24px; margin: 0 20px; }
-  .dock { width: calc(100% - 40px); bottom: 20px; border-radius: 20px; }
-  .dock-inner { justify-content: space-between; }
-  .abtn { flex-direction: column; padding: 10px; gap: 4px; flex: 1; border-radius: 12px; }
-  .abtn img { width: 32px; height: 32px; margin: 0; }
-  .alabel { font-size: 11px; }
-  
-  table { font-size: 12px; }
-  th, td { padding: 10px 8px; }
-  
-  footer .links { flex-direction: column; gap: 16px; }
+/* Mobile-First Base Styles - Default is Mobile */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .slide {
+    padding: 0 0 0 24px;
+    width: calc(100% - 40px);
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .carousel {
+    padding: 0 24px 120px;
+  }
+
+  .card {
+    padding: 40px;
+    margin: 0;
+    width: calc(100vh - 0px);
+  }
+
+  .brand strong {
+    font-size: 48px;
+  }
+
+  table {
+    font-size: 0.95rem;
+  }
+
+  th, td {
+    padding: 16px 12px;
+  }
+
+  .dock {
+    width: auto;
+    max-width: 90%;
+    bottom: 30px;
+    border-radius: 100px;
+  }
+
+  .dock-inner {
+    justify-content: flex-start;
+  }
+
+  .abtn {
+    flex-direction: row;
+    padding: 10px 20px;
+    gap: 10px;
+    flex: none;
+    border-radius: 100px;
+  }
+
+  .abtn img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .alabel {
+    font-size: 14px;
+  }
+
+  footer .links {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 
 /* Smooth Scrolling */
