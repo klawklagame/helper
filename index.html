@@ -5,7 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content="รายละเอียดผู้ช่วยในเกม Clash of Clans" />
+    <meta name="theme-color" content="#050005">
+    <meta name="color-scheme" content="dark">
     <title>Clash Helpers - KLAWKLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://klawkla.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,11 +27,11 @@
                 <div class="brand">
                     <div class="brand-badge" aria-hidden="true">
                         <a href="https://www.klawkla.com/">
-                            <img src="https://klawkla.com/content/images/2025/08/logo.webp" alt="แกล้วกล้า" />
+                            <img src="https://klawkla.com/content/images/2025/08/logo.webp" alt="แกล้วกล้า" width="80" height="80" fetchpriority="high" decoding="async" />
                         </a>
                     </div>
                     <div>
-                        <strong>Clash Helpers</strong>
+                        <strong class="title">Clash Helpers</strong>
                         <br />
                         <small>ข้อมูลผู้ช่วยในเกม</small>
                     </div>
@@ -37,7 +43,7 @@
                 <section class="slide" data-title="ผู้ช่วยห้องทดลอง" aria-label="ผู้ช่วยห้องทดลอง">
                     <article class="card">
                         <div class="profile">
-                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="ผู้ช่วยห้องทดลอง">
+                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="ผู้ช่วยห้องทดลอง" width="64" height="64" decoding="async">
                             <div class="p-head">
                                 <h2>ผู้ช่วยห้องทดลอง</h2>
                                 <div class="meta">ช่วยวิจัยในห้องทดลอง</div>
@@ -79,7 +85,7 @@
                 <section class="slide" data-title="ช่างก่อสร้างฝึกหัด" aria-label="ช่างก่อสร้างฝึกหัด">
                     <article class="card">
                         <div class="profile">
-                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="ช่างก่อสร้างฝึกหัด">
+                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="ช่างก่อสร้างฝึกหัด" width="64" height="64" loading="lazy" decoding="async">
                             <div class="p-head">
                                 <h2>ช่างก่อสร้างฝึกหัด</h2>
                                 <div class="meta">ช่วยอัปเกรดสิ่งก่อสร้าง</div>
@@ -117,7 +123,7 @@
                 <section class="slide" data-title="นักแปรธาตุ" aria-label="นักแปรธาตุ">
                     <article class="card">
                         <div class="profile">
-                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="นักแปรธาตุ">
+                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="นักแปรธาตุ" width="64" height="64" loading="lazy" decoding="async">
                             <div class="p-head">
                                 <h2>นักแปรธาตุ</h2>
                                 <div class="meta">แปลงทรัพยากร</div>
@@ -176,21 +182,21 @@
     <!-- Floating Navigation Pill -->
     <nav class="dock" aria-label="สลับผู้ช่วย">
         <div class="dock-inner">
-            <button class="abtn active" data-index="0">
-                <img src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="ห้องทดลอง">
+            <button class="abtn active" data-index="0" aria-current="page" type="button">
+                <img src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="" width="32" height="32" decoding="async">
                 <span class="alabel">ห้องทดลอง</span>
             </button>
-            <button class="abtn" data-index="1">
-                <img src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="ช่างก่อสร้าง">
+            <button class="abtn" data-index="1" type="button">
+                <img src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="" width="32" height="32" decoding="async">
                 <span class="alabel">ช่างก่อสร้าง</span>
             </button>
-            <button class="abtn" data-index="2">
-                <img src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="นักแปรธาตุ">
+            <button class="abtn" data-index="2" type="button">
+                <img src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="" width="32" height="32" decoding="async">
                 <span class="alabel">นักแปรธาตุ</span>
             </button>
         </div>
     </nav>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
