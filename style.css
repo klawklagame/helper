@@ -1,21 +1,8 @@
-@font-face {
-  font-family: "FC Krung Thep Light";
-  src: url("FCKrungThep-Light.woff2") format("woff2"),
-       url("FCKrungThep-Light.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "FC Maha Nakhon Flat Light";
-  src: url("FCMahaNakhonFlat-Light.woff2") format("woff2"),
-       url("FCMahaNakhonFlat-Light.woff") format("woff");
-  font-display: swap;
-}
-
 :root {
   /* Typography */
-  --font-heading: "Playfair Display", serif; /* Sophisticated serif for headings */
-  --font-body: "FC Maha Nakhon Flat Light", "Inter", sans-serif;
-  --font-interface: "FC Krung Thep Light", "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Sarabun", "Inter", sans-serif;
+  --font-interface: "Prompt", "Inter", sans-serif;
 
   /* Premium Neon/Pink Theme Palette */
   --bg: #050005;                    /* Deepest black-purple */
