@@ -4,51 +4,98 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="รายละเอียดผู้ช่วยในเกม Clash of Clans" />
-    <meta name="theme-color" content="#050005">
+    <meta name="description" content="รายละเอียดผู้ช่วยในเกม Clash of Clans — ห้องทดลอง ช่างก่อสร้างฝึกหัด นักแปรธาตุ" />
+    <meta name="theme-color" content="#050406">
     <meta name="color-scheme" content="dark">
-    <title>Clash Helpers - KLAWKLA</title>
+    <title>Clash Helpers · KLAWKLA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://klawkla.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&family=Sarabun:wght@300;400;600;700&family=Prompt:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrap">
-        <!-- Floating Parallax Shapes -->
-        <div class="bg-shape shape-1"></div>
-        <div class="bg-shape shape-2"></div>
-        <div class="bg-shape shape-3"></div>
+        <!-- page-level orbit -->
+        <div class="x-orbit" aria-hidden="true">
+            <span class="x-float x-float--1">✦</span>
+            <span class="x-float x-float--2">◆</span>
+            <span class="x-float x-float--3">+</span>
+            <span class="x-float x-float--4">✦</span>
+        </div>
 
-        <header>
+        <header class="gh-hero reveal" style="--i:0;">
             <div class="container">
-                <div class="brand">
-                    <div class="brand-badge" aria-hidden="true">
-                        <a href="https://www.klawkla.com/">
-                            <img src="https://klawkla.com/content/images/2025/08/logo.webp" alt="แกล้วกล้า" width="80" height="80" fetchpriority="high" decoding="async" />
-                        </a>
-                    </div>
-                    <div>
-                        <strong class="title">Clash Helpers</strong>
-                        <br />
-                        <small>ข้อมูลผู้ช่วยในเกม</small>
+                <div class="gh-hero-top">
+                    <a class="gh-hero-brand" href="https://www.klawkla.com/">
+                        <img src="https://klawkla.com/content/images/2025/08/logo.webp" alt="แกล้วกล้า"
+                            width="64" height="64" fetchpriority="high" decoding="async" />
+                        <span class="gh-hero-brand-text">KLAWKLA</span>
+                    </a>
+
+                    <div class="x-seal" aria-hidden="true">
+                        <svg class="x-seal-svg" viewBox="0 0 120 120" width="100%" height="100%">
+                            <defs>
+                                <path id="x-seal-path"
+                                    d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
+                            </defs>
+                            <text font-size="11" letter-spacing="1.6">
+                                <textPath href="#x-seal-path" startOffset="0">
+                                    CLASH OF CLANS ■ KLAWKLA ■ CLASH OF CLANS ■ KLAWKLA ■
+                                </textPath>
+                            </text>
+                        </svg>
+                        <span class="x-seal-core"><span class="x-seal-glyph">✦</span></span>
                     </div>
                 </div>
+
+                <div class="x-eyebrow">
+                    <span class="x-eyebrow-dash" aria-hidden="true"></span>
+                    <span>เครื่องมือชาวแคลช</span>
+                    <span class="x-eyebrow-dash" aria-hidden="true"></span>
+                </div>
+
+                <h1 class="gh-hero-title">
+                    <span class="x-title-text">ข้อมูลผู้ช่วย</span><span class="x-title-dot" aria-hidden="true">.</span>
+                </h1>
+
+                <p class="gh-hero-sub">
+                    รายละเอียดผู้ช่วยในเกม Clash of Clans — ห้องทดลอง · ช่างก่อสร้างฝึกหัด · นักแปรธาตุ
+                </p>
             </div>
         </header>
 
         <main id="carousel" class="carousel" aria-label="ผู้ช่วยในเกมแบบสไลด์">
-                <section class="slide" data-title="ผู้ช่วยห้องทดลอง" aria-label="ผู้ช่วยห้องทดลอง">
-                    <article class="card">
-                        <div class="profile">
-                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="ผู้ช่วยห้องทดลอง" width="64" height="64" decoding="async">
-                            <div class="p-head">
-                                <h2>ผู้ช่วยห้องทดลอง</h2>
-                                <div class="meta">ช่วยวิจัยในห้องทดลอง</div>
+
+            <section class="slide reveal" style="--i:1;" data-title="ผู้ช่วยห้องทดลอง" aria-label="ผู้ช่วยห้องทดลอง">
+                <article class="x-card helper-card">
+                    <span class="x-corner x-corner--tl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--tr" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--bl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--br" aria-hidden="true"></span>
+
+                    <div class="helper-head">
+                        <img class="avatar"
+                            src="https://klawkla.com/content/images/2025/08/lab_assistant.png"
+                            alt="ผู้ช่วยห้องทดลอง" width="64" height="64" decoding="async">
+                        <div class="helper-titleblock">
+                            <div class="x-eyebrow">
+                                <span class="x-eyebrow-dash" aria-hidden="true"></span>
+                                <span>ผู้ช่วย 01</span>
                             </div>
+                            <h2 class="x-title">
+                                <span class="x-title-text">ผู้ช่วยห้องทดลอง</span><span class="x-title-dot" aria-hidden="true">.</span>
+                            </h2>
+                            <p class="helper-desc">ช่วยวิจัยในห้องทดลอง</p>
                         </div>
+                        <span class="x-pulse" aria-hidden="true"></span>
+                    </div>
+
+                    <span class="x-perf" aria-hidden="true"></span>
+
+                    <div class="helper-table-wrap">
                         <table>
                             <colgroup>
                                 <col style="width:18%">
@@ -79,18 +126,37 @@
                                 <tr><td class="num">12</td><td class="num">12x</td><td class="num">1,000</td><td class="num"><b>16</b></td></tr>
                             </tbody>
                         </table>
-                    </article>
-                </section>
+                    </div>
+                </article>
+            </section>
 
-                <section class="slide" data-title="ช่างก่อสร้างฝึกหัด" aria-label="ช่างก่อสร้างฝึกหัด">
-                    <article class="card">
-                        <div class="profile">
-                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="ช่างก่อสร้างฝึกหัด" width="64" height="64" loading="lazy" decoding="async">
-                            <div class="p-head">
-                                <h2>ช่างก่อสร้างฝึกหัด</h2>
-                                <div class="meta">ช่วยอัปเกรดสิ่งก่อสร้าง</div>
+            <section class="slide reveal" style="--i:2;" data-title="ช่างก่อสร้างฝึกหัด" aria-label="ช่างก่อสร้างฝึกหัด">
+                <article class="x-card helper-card">
+                    <span class="x-corner x-corner--tl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--tr" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--bl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--br" aria-hidden="true"></span>
+
+                    <div class="helper-head">
+                        <img class="avatar"
+                            src="https://klawkla.com/content/images/2025/08/apprentice_builder.png"
+                            alt="ช่างก่อสร้างฝึกหัด" width="64" height="64" loading="lazy" decoding="async">
+                        <div class="helper-titleblock">
+                            <div class="x-eyebrow">
+                                <span class="x-eyebrow-dash" aria-hidden="true"></span>
+                                <span>ผู้ช่วย 02</span>
                             </div>
+                            <h2 class="x-title">
+                                <span class="x-title-text">ช่างก่อสร้างฝึกหัด</span><span class="x-title-dot" aria-hidden="true">.</span>
+                            </h2>
+                            <p class="helper-desc">ช่วยอัปเกรดสิ่งก่อสร้าง</p>
                         </div>
+                        <span class="x-pulse" aria-hidden="true"></span>
+                    </div>
+
+                    <span class="x-perf" aria-hidden="true"></span>
+
+                    <div class="helper-table-wrap">
                         <table>
                             <colgroup>
                                 <col style="width:18%">
@@ -117,18 +183,37 @@
                                 <tr><td class="num">8</td><td>8x</td><td class="num">1,000</td><td class="num"><b>14</b></td></tr>
                             </tbody>
                         </table>
-                    </article>
-                </section>
+                    </div>
+                </article>
+            </section>
 
-                <section class="slide" data-title="นักแปรธาตุ" aria-label="นักแปรธาตุ">
-                    <article class="card">
-                        <div class="profile">
-                            <img class="avatar" src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="นักแปรธาตุ" width="64" height="64" loading="lazy" decoding="async">
-                            <div class="p-head">
-                                <h2>นักแปรธาตุ</h2>
-                                <div class="meta">แปลงทรัพยากร</div>
+            <section class="slide reveal" style="--i:3;" data-title="นักแปรธาตุ" aria-label="นักแปรธาตุ">
+                <article class="x-card helper-card">
+                    <span class="x-corner x-corner--tl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--tr" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--bl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--br" aria-hidden="true"></span>
+
+                    <div class="helper-head">
+                        <img class="avatar"
+                            src="https://klawkla.com/content/images/2025/08/alchemist.png"
+                            alt="นักแปรธาตุ" width="64" height="64" loading="lazy" decoding="async">
+                        <div class="helper-titleblock">
+                            <div class="x-eyebrow">
+                                <span class="x-eyebrow-dash" aria-hidden="true"></span>
+                                <span>ผู้ช่วย 03</span>
                             </div>
+                            <h2 class="x-title">
+                                <span class="x-title-text">นักแปรธาตุ</span><span class="x-title-dot" aria-hidden="true">.</span>
+                            </h2>
+                            <p class="helper-desc">แปลงทรัพยากร</p>
                         </div>
+                        <span class="x-pulse" aria-hidden="true"></span>
+                    </div>
+
+                    <span class="x-perf" aria-hidden="true"></span>
+
+                    <div class="helper-table-wrap">
                         <table>
                             <colgroup>
                                 <col style="width:15%">
@@ -156,42 +241,71 @@
                                 <tr><td class="num">7</td><td class="num">10.5M</td><td class="num">70k</td><td class="num">1.5k</td><td class="num">17</td></tr>
                             </tbody>
                         </table>
-                    </article>
-                </section>
-            </main>
+                    </div>
+                </article>
+            </section>
 
-        <footer>
+        </main>
+
+        <footer class="gh-footer reveal" style="--i:4;">
             <div class="container">
-                <p class="support-message">
-                    "ยกระดับการเล่นแคลชของคุณ" <br>
-                    <span style="font-size: 0.8em; opacity: 0.7; font-style: normal;">สนับสนุนแกล้วด้วยโค้ด <span class="support-code">KLAWKLA</span></span>
-                </p>
-                <div class="links">
-                    <a href="https://store.supercell.com/th/clashofclans?boost=KLAWKLA" target="_blank" rel="noopener noreferrer">
-                        <span>ใช้โค้ด KLAWKLA</span> →
+                <article class="x-card gh-vault">
+                    <span class="x-corner x-corner--tl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--tr" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--bl" aria-hidden="true"></span>
+                    <span class="x-corner x-corner--br" aria-hidden="true"></span>
+
+                    <div class="x-eyebrow" style="justify-content:center;display:flex;">
+                        <span class="x-eyebrow-dash" aria-hidden="true"></span>
+                        <span>/ CREATOR · CODE</span>
+                        <span class="x-eyebrow-dash" aria-hidden="true"></span>
+                    </div>
+
+                    <h2 class="x-title">
+                        <span class="x-title-text">ยกระดับการเล่นแคลชของคุณ</span><span class="x-title-dot" aria-hidden="true">.</span>
+                    </h2>
+
+                    <p class="gh-vault-sub">สนับสนุนแกล้วด้วยโค้ดด้านล่าง ในร้านค้าของ Supercell</p>
+
+                    <div class="code-tiles" role="text" aria-label="โค้ด KLAWKLA">
+                        <span>K</span><span>L</span><span>A</span><span>W</span><span>K</span><span>L</span><span>A</span>
+                    </div>
+
+                    <span class="x-perf" aria-hidden="true" style="margin:1.6rem 0 2rem;"></span>
+
+                    <a class="x-cta"
+                       href="https://store.supercell.com/th/clashofclans?boost=KLAWKLA"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="x-cta-bg" aria-hidden="true"></span>
+                        <span>ใช้โค้ด KLAWKLA</span>
+                        <span class="x-cta-arrow" aria-hidden="true">→</span>
                     </a>
-                    <a href="https://www.klawkla.com" target="_blank" rel="noopener noreferrer">
-                        <span>เยี่ยมชมเว็บไซต์</span> →
-                    </a>
-                </div>
+
+                    <div>
+                        <a class="gh-secondary" href="https://www.klawkla.com" target="_blank" rel="noopener noreferrer">
+                            เยี่ยมชม klawkla.com →
+                        </a>
+                    </div>
+                </article>
+
                 <p class="credit">สร้างโดยผู้เล่นแคลชเพื่อผู้เล่นแคลช</p>
             </div>
         </footer>
     </div>
 
-    <!-- Floating Navigation Pill -->
+    <!-- floating dock (mobile + tablet) -->
     <nav class="dock" aria-label="สลับผู้ช่วย">
         <div class="dock-inner">
             <button class="abtn active" data-index="0" aria-current="page" type="button">
-                <img src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="" width="32" height="32" decoding="async">
+                <img src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="" width="26" height="26" decoding="async">
                 <span class="alabel">ห้องทดลอง</span>
             </button>
             <button class="abtn" data-index="1" type="button">
-                <img src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="" width="32" height="32" decoding="async">
+                <img src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="" width="26" height="26" decoding="async">
                 <span class="alabel">ช่างก่อสร้าง</span>
             </button>
             <button class="abtn" data-index="2" type="button">
-                <img src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="" width="32" height="32" decoding="async">
+                <img src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="" width="26" height="26" decoding="async">
                 <span class="alabel">นักแปรธาตุ</span>
             </button>
         </div>
@@ -199,4 +313,5 @@
 
     <script src="script.js" defer></script>
 </body>
+
 </html>
