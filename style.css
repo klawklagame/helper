@@ -275,7 +275,7 @@ img { max-width: 100%; display: block; }
     border-collapse: collapse;
     font-family: var(--font-sans);
     font-size: 1.4rem;
-    min-width: 380px;
+    table-layout: fixed;
 }
 .helper-table thead th {
     padding: 1rem .6rem;
@@ -293,6 +293,7 @@ img { max-width: 100%; display: block; }
     text-align: left;
     border-bottom: 1px solid var(--line);
     font-variant-numeric: tabular-nums;
+    white-space: nowrap;
 }
 .helper-table tbody td.num { text-align: right; }
 .helper-table tbody td:first-child {
@@ -313,6 +314,32 @@ img { max-width: 100%; display: block; }
 .helper--alchemist .helper-table tbody tr.hl b { color: var(--alchemist); }
 
 .helper-table tbody tr:hover:not(.hl) { background: rgba(255,255,255,0.025); }
+
+/* mobile: tighten container, card, and table so the stat grid fits without horizontal scroll */
+@media (max-width: 560px) {
+    .container { padding: 0 1.2rem; }
+    .helper { padding: 1.6rem 1.2rem; }
+    .helper-head { gap: 1rem; }
+    .helper-avatar { width: 52px; height: 52px; }
+
+    .helper-table { font-size: 1.25rem; }
+    .helper-table thead th {
+        padding: .75rem .3rem;
+        font-size: 1.05rem;
+        letter-spacing: 0;
+    }
+    .helper-table tbody td { padding: .7rem .3rem; }
+    .helper-table thead th:first-child,
+    .helper-table tbody td:first-child { padding-left: .2rem; }
+    .helper-table thead th:last-child,
+    .helper-table tbody td:last-child { padding-right: .2rem; }
+}
+
+@media (max-width: 360px) {
+    .helper-table { font-size: 1.15rem; }
+    .helper-table thead th { font-size: 1rem; padding: .7rem .2rem; }
+    .helper-table tbody td { padding: .65rem .2rem; }
+}
 
 /* ==============================================================
    FOOTER
