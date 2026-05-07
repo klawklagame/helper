@@ -1,220 +1,442 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <meta
+            name="description"
+            content="รายละเอียดผู้ช่วยในเกม Clash of Clans — ห้องทดลอง ช่างก่อสร้างฝึกหัด นักแปรธาตุ"
+        />
+        <meta name="theme-color" content="#0a0a0a" />
+        <meta name="color-scheme" content="dark" />
+        <title>Clash Helpers · KLAWKLA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://klawkla.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@400;500;700&display=swap"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="รายละเอียดผู้ช่วยในเกม Clash of Clans — ห้องทดลอง ช่างก่อสร้างฝึกหัด นักแปรธาตุ" />
-    <meta name="theme-color" content="#0a0a0a">
-    <meta name="color-scheme" content="dark">
-    <title>Clash Helpers · KLAWKLA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://klawkla.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="wrap">
-
-        <header class="hero reveal" style="--i:0;">
-            <div class="container">
-                <div class="hero-top">
-                    <a class="hero-brand" href="https://www.klawkla.com/">
-                        <img src="https://klawkla.com/content/images/2025/08/logo.webp" alt="แกล้วกล้า"
-                            width="36" height="36" fetchpriority="high" decoding="async" />
-                        <span>KLAWKLA</span>
-                    </a>
-                    <span class="hero-tag">เครื่องมือชาวแคลช</span>
-                </div>
-
-                <h1 class="hero-title">
-                    ข้อมูลผู้ช่วย
-                </h1>
-
-                <p class="hero-sub">
-                    รายละเอียดผู้ช่วยในเกม Clash of Clans — ห้องทดลอง · ช่างก่อสร้างฝึกหัด · นักแปรธาตุ
-                </p>
-            </div>
-        </header>
-
-        <main id="carousel" class="carousel" aria-label="ผู้ช่วยในเกมแบบสไลด์">
-
-            <section class="slide reveal" style="--i:1;" data-title="ผู้ช่วยห้องทดลอง" aria-label="ผู้ช่วยห้องทดลอง">
+    <body>
+        <div class="wrap">
+            <header class="hero reveal" style="--i: 0">
                 <div class="container">
-                    <article class="card helper helper--lab">
-                        <div class="helper-head">
-                            <img class="helper-avatar"
-                                src="https://klawkla.com/content/images/2025/08/lab_assistant.png"
-                                alt="ผู้ช่วยห้องทดลอง" width="64" height="64" decoding="async">
-                            <div class="helper-titleblock">
-                                <span class="eyebrow">ผู้ช่วย 01</span>
-                                <h2 class="helper-name">ผู้ช่วยห้องทดลอง</h2>
-                                <p class="helper-desc">ช่วยวิจัยในห้องทดลอง</p>
-                            </div>
-                        </div>
+                    <div class="hero-top">
+                        <a class="hero-brand" href="https://www.klawkla.com/">
+                            <img
+                                src="https://klawkla.com/content/images/2025/08/logo.webp"
+                                alt="แกล้วกล้า"
+                                width="36"
+                                height="36"
+                                fetchpriority="high"
+                                decoding="async"
+                            />
+                            <span>KLAWKLA</span>
+                        </a>
+                        <span class="hero-tag">เครื่องมือชาวแคลช</span>
+                    </div>
 
-                        <div class="helper-table-wrap">
-                            <table class="helper-table">
-                                <colgroup>
-                                    <col style="width:25%">
-                                    <col style="width:25%">
-                                    <col style="width:25%">
-                                    <col style="width:25%">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>เลเวล</th>
-                                        <th>อัตรา</th>
-                                        <th>ค่าอัปเกรด</th>
-                                        <th>บ้าน</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="num">1</td><td class="num">1x</td><td class="num">0</td><td class="num">9</td></tr>
-                                    <tr class="hl"><td class="num">2</td><td class="num">2x</td><td class="num"><b>500</b></td><td class="num"><b>10</b></td></tr>
-                                    <tr><td class="num">3</td><td class="num">3x</td><td class="num">500</td><td class="num">10</td></tr>
-                                    <tr><td class="num">4</td><td class="num">4x</td><td class="num">500</td><td class="num"><b>11</b></td></tr>
-                                    <tr class="hl"><td class="num">5</td><td class="num">5x</td><td class="num"><b>750</b></td><td class="num"><b>12</b></td></tr>
-                                    <tr><td class="num">6</td><td class="num">6x</td><td class="num">750</td><td class="num">12</td></tr>
-                                    <tr><td class="num">7</td><td class="num">7x</td><td class="num">750</td><td class="num"><b>13</b></td></tr>
-                                    <tr><td class="num">8</td><td class="num">8x</td><td class="num">750</td><td class="num">13</td></tr>
-                                    <tr class="hl"><td class="num">9</td><td class="num">9x</td><td class="num"><b>1,000</b></td><td class="num"><b>14</b></td></tr>
-                                    <tr><td class="num">10</td><td class="num">10x</td><td class="num">1,000</td><td class="num">14</td></tr>
-                                    <tr><td class="num">11</td><td class="num">11x</td><td class="num">1,000</td><td class="num"><b>15</b></td></tr>
-                                    <tr><td class="num">12</td><td class="num">12x</td><td class="num">1,000</td><td class="num"><b>16</b></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </article>
+                    <h1 class="hero-title">ข้อมูลผู้ช่วย</h1>
+
+                    <p class="hero-sub">
+                        รายละเอียดผู้ช่วยในเกม Clash of Clans — ห้องทดลอง ·
+                        ช่างก่อสร้างฝึกหัด · นักแปรธาตุ
+                    </p>
                 </div>
-            </section>
+            </header>
 
-            <section class="slide reveal" style="--i:2;" data-title="ช่างก่อสร้างฝึกหัด" aria-label="ช่างก่อสร้างฝึกหัด">
+            <main
+                id="carousel"
+                class="carousel"
+                aria-label="ผู้ช่วยในเกมแบบสไลด์"
+            >
+                <section
+                    class="slide reveal"
+                    style="--i: 1"
+                    data-title="ผู้ช่วยห้องทดลอง"
+                    aria-label="ผู้ช่วยห้องทดลอง"
+                >
+                    <div class="container">
+                        <article class="card helper helper--lab">
+                            <div class="helper-head">
+                                <img
+                                    class="helper-avatar"
+                                    src="https://klawkla.com/content/images/2025/08/lab_assistant.png"
+                                    alt="ผู้ช่วยห้องทดลอง"
+                                    width="64"
+                                    height="64"
+                                    decoding="async"
+                                />
+                                <div class="helper-titleblock">
+                                    <span class="eyebrow">ผู้ช่วย 01</span>
+                                    <h2 class="helper-name">
+                                        ผู้ช่วยห้องทดลอง
+                                    </h2>
+                                    <p class="helper-desc">
+                                        ช่วยวิจัยในห้องทดลอง
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="helper-table-wrap">
+                                <table class="helper-table">
+                                    <colgroup>
+                                        <col style="width: 10%" />
+                                        <col style="width: 30%" />
+                                        <col style="width: 30%" />
+                                        <col style="width: 30%" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>เลเวล</th>
+                                            <th>อัตรา</th>
+                                            <th>ค่าอัปเกรด</th>
+                                            <th>บ้าน</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="num">1</td>
+                                            <td class="num">1x</td>
+                                            <td class="num">0</td>
+                                            <td class="num">9</td>
+                                        </tr>
+                                        <tr class="hl">
+                                            <td class="num">2</td>
+                                            <td class="num">2x</td>
+                                            <td class="num"><b>500</b></td>
+                                            <td class="num"><b>10</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">3</td>
+                                            <td class="num">3x</td>
+                                            <td class="num">500</td>
+                                            <td class="num">10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">4</td>
+                                            <td class="num">4x</td>
+                                            <td class="num">500</td>
+                                            <td class="num"><b>11</b></td>
+                                        </tr>
+                                        <tr class="hl">
+                                            <td class="num">5</td>
+                                            <td class="num">5x</td>
+                                            <td class="num"><b>750</b></td>
+                                            <td class="num"><b>12</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">6</td>
+                                            <td class="num">6x</td>
+                                            <td class="num">750</td>
+                                            <td class="num">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">7</td>
+                                            <td class="num">7x</td>
+                                            <td class="num">750</td>
+                                            <td class="num"><b>13</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">8</td>
+                                            <td class="num">8x</td>
+                                            <td class="num">750</td>
+                                            <td class="num">13</td>
+                                        </tr>
+                                        <tr class="hl">
+                                            <td class="num">9</td>
+                                            <td class="num">9x</td>
+                                            <td class="num"><b>1,000</b></td>
+                                            <td class="num"><b>14</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">10</td>
+                                            <td class="num">10x</td>
+                                            <td class="num">1,000</td>
+                                            <td class="num">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">11</td>
+                                            <td class="num">11x</td>
+                                            <td class="num">1,000</td>
+                                            <td class="num"><b>15</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">12</td>
+                                            <td class="num">12x</td>
+                                            <td class="num">1,000</td>
+                                            <td class="num"><b>16</b></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section
+                    class="slide reveal"
+                    style="--i: 2"
+                    data-title="ช่างก่อสร้างฝึกหัด"
+                    aria-label="ช่างก่อสร้างฝึกหัด"
+                >
+                    <div class="container">
+                        <article class="card helper helper--builder">
+                            <div class="helper-head">
+                                <img
+                                    class="helper-avatar"
+                                    src="https://klawkla.com/content/images/2025/08/apprentice_builder.png"
+                                    alt="ช่างก่อสร้างฝึกหัด"
+                                    width="64"
+                                    height="64"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <div class="helper-titleblock">
+                                    <span class="eyebrow">ผู้ช่วย 02</span>
+                                    <h2 class="helper-name">
+                                        ช่างก่อสร้างฝึกหัด
+                                    </h2>
+                                    <p class="helper-desc">
+                                        ช่วยอัปเกรดสิ่งก่อสร้าง
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="helper-table-wrap">
+                                <table class="helper-table">
+                                    <colgroup>
+                                        <col style="width: 10%" />
+                                        <col style="width: 30%" />
+                                        <col style="width: 30%" />
+                                        <col style="width: 30%" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>เลเวล</th>
+                                            <th>อัตรา</th>
+                                            <th>ค่าอัปเกรด</th>
+                                            <th>บ้าน</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="num">1</td>
+                                            <td class="num">1x</td>
+                                            <td class="num">500</td>
+                                            <td class="num">10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">2</td>
+                                            <td class="num">2x</td>
+                                            <td class="num">500</td>
+                                            <td class="num">10</td>
+                                        </tr>
+                                        <tr class="hl">
+                                            <td class="num">3</td>
+                                            <td class="num">3x</td>
+                                            <td class="num"><b>750</b></td>
+                                            <td class="num"><b>11</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">4</td>
+                                            <td class="num">4x</td>
+                                            <td class="num">750</td>
+                                            <td class="num">11</td>
+                                        </tr>
+                                        <tr class="hl">
+                                            <td class="num">5</td>
+                                            <td class="num">5x</td>
+                                            <td class="num"><b>1,000</b></td>
+                                            <td class="num"><b>12</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">6</td>
+                                            <td class="num">6x</td>
+                                            <td class="num">1,000</td>
+                                            <td class="num">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">7</td>
+                                            <td class="num">7x</td>
+                                            <td class="num">1,000</td>
+                                            <td class="num"><b>13</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">8</td>
+                                            <td class="num">8x</td>
+                                            <td class="num">1,000</td>
+                                            <td class="num"><b>14</b></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section
+                    class="slide reveal"
+                    style="--i: 3"
+                    data-title="นักแปรธาตุ"
+                    aria-label="นักแปรธาตุ"
+                >
+                    <div class="container">
+                        <article class="card helper helper--alchemist">
+                            <div class="helper-head">
+                                <img
+                                    class="helper-avatar"
+                                    src="https://klawkla.com/content/images/2025/08/alchemist.png"
+                                    alt="นักแปรธาตุ"
+                                    width="64"
+                                    height="64"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <div class="helper-titleblock">
+                                    <span class="eyebrow">ผู้ช่วย 03</span>
+                                    <h2 class="helper-name">นักแปรธาตุ</h2>
+                                    <p class="helper-desc">แปลงทรัพยากร</p>
+                                </div>
+                            </div>
+
+                            <div class="helper-table-wrap">
+                                <table class="helper-table">
+                                    <colgroup>
+                                        <col style="width: 10%" />
+                                        <col style="width: 25%" />
+                                        <col style="width: 25%" />
+                                        <col style="width: 20%" />
+                                        <col style="width: 20%" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>เลเวล</th>
+                                            <th>ทอง/น้ำ</th>
+                                            <th>น้ำดำ</th>
+                                            <th>ค่าอัป</th>
+                                            <th>บ้าน</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="num">1</td>
+                                            <td class="num">1.5M</td>
+                                            <td class="num">10k</td>
+                                            <td class="num">100</td>
+                                            <td class="num">11</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">2</td>
+                                            <td class="num">2.25M</td>
+                                            <td class="num">15k</td>
+                                            <td class="num">250</td>
+                                            <td class="num">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">3</td>
+                                            <td class="num">3M</td>
+                                            <td class="num">20k</td>
+                                            <td class="num">500</td>
+                                            <td class="num">13</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">4</td>
+                                            <td class="num">4.5M</td>
+                                            <td class="num">30k</td>
+                                            <td class="num">1k</td>
+                                            <td class="num">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">5</td>
+                                            <td class="num">6M</td>
+                                            <td class="num">40k</td>
+                                            <td class="num">1k</td>
+                                            <td class="num">15</td>
+                                        </tr>
+                                        <tr class="hl">
+                                            <td class="num">6</td>
+                                            <td class="num">7.5M</td>
+                                            <td class="num">50k</td>
+                                            <td class="num"><b>1.5k</b></td>
+                                            <td class="num"><b>16</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">7</td>
+                                            <td class="num">10.5M</td>
+                                            <td class="num">70k</td>
+                                            <td class="num">1.5k</td>
+                                            <td class="num">17</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="foot reveal" style="--i: 4">
                 <div class="container">
-                    <article class="card helper helper--builder">
-                        <div class="helper-head">
-                            <img class="helper-avatar"
-                                src="https://klawkla.com/content/images/2025/08/apprentice_builder.png"
-                                alt="ช่างก่อสร้างฝึกหัด" width="64" height="64" loading="lazy" decoding="async">
-                            <div class="helper-titleblock">
-                                <span class="eyebrow">ผู้ช่วย 02</span>
-                                <h2 class="helper-name">ช่างก่อสร้างฝึกหัด</h2>
-                                <p class="helper-desc">ช่วยอัปเกรดสิ่งก่อสร้าง</p>
-                            </div>
-                        </div>
-
-                        <div class="helper-table-wrap">
-                            <table class="helper-table">
-                                <colgroup>
-                                    <col style="width:25%">
-                                    <col style="width:25%">
-                                    <col style="width:25%">
-                                    <col style="width:25%">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>เลเวล</th>
-                                        <th>อัตรา</th>
-                                        <th>ค่าอัปเกรด</th>
-                                        <th>บ้าน</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="num">1</td><td class="num">1x</td><td class="num">500</td><td class="num">10</td></tr>
-                                    <tr><td class="num">2</td><td class="num">2x</td><td class="num">500</td><td class="num">10</td></tr>
-                                    <tr class="hl"><td class="num">3</td><td class="num">3x</td><td class="num"><b>750</b></td><td class="num"><b>11</b></td></tr>
-                                    <tr><td class="num">4</td><td class="num">4x</td><td class="num">750</td><td class="num">11</td></tr>
-                                    <tr class="hl"><td class="num">5</td><td class="num">5x</td><td class="num"><b>1,000</b></td><td class="num"><b>12</b></td></tr>
-                                    <tr><td class="num">6</td><td class="num">6x</td><td class="num">1,000</td><td class="num">12</td></tr>
-                                    <tr><td class="num">7</td><td class="num">7x</td><td class="num">1,000</td><td class="num"><b>13</b></td></tr>
-                                    <tr><td class="num">8</td><td class="num">8x</td><td class="num">1,000</td><td class="num"><b>14</b></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </article>
+                    <p class="credit">
+                        สร้างโดยผู้เล่นแคลชเพื่อผู้เล่นแคลช ·
+                        <a
+                            href="https://www.klawkla.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >klawkla.com</a
+                        >
+                    </p>
                 </div>
-            </section>
-
-            <section class="slide reveal" style="--i:3;" data-title="นักแปรธาตุ" aria-label="นักแปรธาตุ">
-                <div class="container">
-                    <article class="card helper helper--alchemist">
-                        <div class="helper-head">
-                            <img class="helper-avatar"
-                                src="https://klawkla.com/content/images/2025/08/alchemist.png"
-                                alt="นักแปรธาตุ" width="64" height="64" loading="lazy" decoding="async">
-                            <div class="helper-titleblock">
-                                <span class="eyebrow">ผู้ช่วย 03</span>
-                                <h2 class="helper-name">นักแปรธาตุ</h2>
-                                <p class="helper-desc">แปลงทรัพยากร</p>
-                            </div>
-                        </div>
-
-                        <div class="helper-table-wrap">
-                            <table class="helper-table">
-                                <colgroup>
-                                    <col style="width:15%">
-                                    <col style="width:25%">
-                                    <col style="width:25%">
-                                    <col style="width:15%">
-                                    <col style="width:20%">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>เลเวล</th>
-                                        <th>ทอง/น้ำ</th>
-                                        <th>น้ำดำ</th>
-                                        <th>ค่าอัป</th>
-                                        <th>บ้าน</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="num">1</td><td class="num">1.5M</td><td class="num">10k</td><td class="num">100</td><td class="num">11</td></tr>
-                                    <tr><td class="num">2</td><td class="num">2.25M</td><td class="num">15k</td><td class="num">250</td><td class="num">12</td></tr>
-                                    <tr><td class="num">3</td><td class="num">3M</td><td class="num">20k</td><td class="num">500</td><td class="num">13</td></tr>
-                                    <tr><td class="num">4</td><td class="num">4.5M</td><td class="num">30k</td><td class="num">1k</td><td class="num">14</td></tr>
-                                    <tr><td class="num">5</td><td class="num">6M</td><td class="num">40k</td><td class="num">1k</td><td class="num">15</td></tr>
-                                    <tr class="hl"><td class="num">6</td><td class="num">7.5M</td><td class="num">50k</td><td class="num"><b>1.5k</b></td><td class="num"><b>16</b></td></tr>
-                                    <tr><td class="num">7</td><td class="num">10.5M</td><td class="num">70k</td><td class="num">1.5k</td><td class="num">17</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="foot reveal" style="--i:4;">
-            <div class="container">
-                <p class="credit">
-                    สร้างโดยผู้เล่นแคลชเพื่อผู้เล่นแคลช ·
-                    <a href="https://www.klawkla.com" target="_blank" rel="noopener noreferrer">klawkla.com</a>
-                </p>
-            </div>
-        </footer>
-    </div>
-
-    <nav class="dock" aria-label="สลับผู้ช่วย">
-        <div class="dock-inner">
-            <button class="abtn active" data-index="0" aria-current="page" type="button">
-                <img src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="" width="26" height="26" decoding="async">
-                <span class="alabel">ห้องทดลอง</span>
-            </button>
-            <button class="abtn" data-index="1" type="button">
-                <img src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="" width="26" height="26" decoding="async">
-                <span class="alabel">ช่างก่อสร้าง</span>
-            </button>
-            <button class="abtn" data-index="2" type="button">
-                <img src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="" width="26" height="26" decoding="async">
-                <span class="alabel">นักแปรธาตุ</span>
-            </button>
+            </footer>
         </div>
-    </nav>
 
-    <script src="script.js" defer></script>
-</body>
+        <nav class="dock" aria-label="สลับผู้ช่วย">
+            <div class="dock-inner">
+                <button
+                    class="abtn active"
+                    data-index="0"
+                    aria-current="page"
+                    type="button"
+                >
+                    <img
+                        src="https://klawkla.com/content/images/2025/08/lab_assistant.png"
+                        alt=""
+                        width="26"
+                        height="26"
+                        decoding="async"
+                    />
+                    <span class="alabel">ห้องทดลอง</span>
+                </button>
+                <button class="abtn" data-index="1" type="button">
+                    <img
+                        src="https://klawkla.com/content/images/2025/08/apprentice_builder.png"
+                        alt=""
+                        width="26"
+                        height="26"
+                        decoding="async"
+                    />
+                    <span class="alabel">ช่างก่อสร้าง</span>
+                </button>
+                <button class="abtn" data-index="2" type="button">
+                    <img
+                        src="https://klawkla.com/content/images/2025/08/alchemist.png"
+                        alt=""
+                        width="26"
+                        height="26"
+                        decoding="async"
+                    />
+                    <span class="alabel">นักแปรธาตุ</span>
+                </button>
+            </div>
+        </nav>
 
+        <script src="script.js" defer></script>
+    </body>
 </html>
