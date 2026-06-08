@@ -17,10 +17,10 @@ function setActive(index) {
 
 function goTo(index) {
     if (isGrid()) {
-        slides[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        slides[index].scrollIntoView({ behavior: 'auto', block: 'start' });
     } else {
         const x = slides[index].offsetLeft - carousel.offsetLeft;
-        carousel.scrollTo({ left: x, behavior: 'smooth' });
+        carousel.scrollTo({ left: x, behavior: 'auto' });
     }
     setActive(index);
 }
