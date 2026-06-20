@@ -5,30 +5,26 @@
 
 @font-face {
     font-family: "FC Krung Thep";
-    src: url("https://klawkla.com/content/files/2025/08/FCKrungThep-Light.woff2") format("woff2"),
-         url("https://klawkla.com/content/files/2025/08/FCKrungThep-Light.woff") format("woff");
-    font-weight: 100 600;
-    font-display: swap;
-}
-@font-face {
-    font-family: "FC Krung Thep";
-    src: url("https://klawkla.com/content/files/2026/02/FCKrungThep-Bold.woff2") format("woff2"),
-         url("https://klawkla.com/content/files/2026/02/FCKrungThep-Bold.woff") format("woff");
-    font-weight: 700 900;
+    src: url("fonts/FCKrungThep-Bold.woff") format("woff"),
+         url("fonts/FCKrungThep-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "FC Maha Nakhon Flat";
-    src: url("https://klawkla.com/content/files/2025/08/FCMahaNakhonFlat-Light.woff2") format("woff2"),
-         url("https://klawkla.com/content/files/2025/08/FCMahaNakhonFlat-Light.woff") format("woff");
-    font-weight: 100 600;
+    src: url("fonts/FCMahaNakhonFlat-Regular.woff") format("woff"),
+         url("fonts/FCMahaNakhonFlat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "FC Maha Nakhon Flat";
-    src: url("https://klawkla.com/content/files/2026/02/FCMahaNakhonFlat-Bold.woff2") format("woff2"),
-         url("https://klawkla.com/content/files/2026/02/FCMahaNakhonFlat-Bold.woff") format("woff");
-    font-weight: 700 900;
+    src: url("fonts/FCMahaNakhonFlat-Bold.woff") format("woff"),
+         url("fonts/FCMahaNakhonFlat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -44,8 +40,8 @@
     --line-strong: rgba(255, 255, 255, 0.16);
     --accent: #d7d7d7;
 
-    --font-sans: "FC Krung Thep", "Noto Sans Thai", Tahoma, Helvetica, Arial, sans-serif;
-    --font-serif: "FC Maha Nakhon Flat", "Noto Serif Thai", "Noto Sans Thai", Tahoma, Georgia, Times, serif;
+    --font-heading: "FC Krung Thep", "Noto Sans Thai", Tahoma, Helvetica, Arial, sans-serif;
+    --font-body: "FC Maha Nakhon Flat", "Noto Sans Thai", Tahoma, Helvetica, Arial, sans-serif;
 
     --space-xs: 0.5rem;
     --space-sm: 0.8rem;
@@ -74,7 +70,8 @@ body {
         linear-gradient(180deg, #101010 0%, var(--bg) 260px),
         var(--bg);
     color: var(--fg);
-    font-family: var(--font-serif);
+    font-family: var(--font-body);
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -107,7 +104,7 @@ img {
 .eyebrow {
     display: inline-flex;
     align-items: center;
-    font-family: var(--font-sans);
+    font-family: var(--font-heading);
     font-size: 1.15rem;
     font-weight: 700;
     color: var(--muted-2);
@@ -138,7 +135,7 @@ img {
     align-items: center;
     gap: 0.8rem;
     color: var(--fg);
-    font-family: var(--font-sans);
+    font-family: var(--font-heading);
     font-size: 1.35rem;
     font-weight: 700;
 }
@@ -151,12 +148,12 @@ img {
 }
 .hero-tag {
     color: var(--muted);
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     font-size: 1.15rem;
 }
 .hero-title {
     margin: var(--space-md) 0 var(--space-sm);
-    font-family: var(--font-sans);
+    font-family: var(--font-heading);
     font-size: clamp(3.2rem, 6.4vw, 4.8rem);
     font-weight: 700;
     line-height: 1.1;
@@ -232,7 +229,7 @@ img {
 }
 .helper-name {
     margin: 0.2rem 0 0.2rem;
-    font-family: var(--font-sans);
+    font-family: var(--font-heading);
     font-size: clamp(2rem, 3.6vw, 2.4rem);
     font-weight: 700;
     line-height: 1.22;
@@ -252,7 +249,7 @@ img {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     font-size: 1.38rem;
 }
 .helper-table thead th {
@@ -304,7 +301,7 @@ img {
 .credit {
     margin: 0;
     color: var(--muted-2);
-    font-family: var(--font-serif);
+    font-family: var(--font-body);
     font-size: 1.3rem;
     text-align: center;
 }
@@ -345,7 +342,7 @@ img {
     padding: 0.85rem 0.8rem;
     border-radius: var(--radius);
     color: var(--muted);
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     font-size: 1.2rem;
     font-weight: 700;
     transition: background-color 120ms ease, color 120ms ease;
