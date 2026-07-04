@@ -3,6 +3,8 @@ const slides = [...document.querySelectorAll('.slide')];
 const buttons = [...document.querySelectorAll('.abtn')];
 
 const isGrid = () => window.matchMedia('(min-width: 1024px)').matches;
+const scrollBehavior = () =>
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
 let activeIndex = 0;
 
@@ -17,10 +19,10 @@ function setActive(index) {
 
 function goTo(index) {
     if (isGrid()) {
-        slides[index].scrollIntoView({ behavior: 'auto', block: 'start' });
+        slides[index].scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
     } else {
         const x = slides[index].offsetLeft - carousel.offsetLeft;
-        carousel.scrollTo({ left: x, behavior: 'auto' });
+        carousel.scrollTo({ left: x, behavior: scrollBehavior() });
     }
     setActive(index);
 }
@@ -47,6 +49,7 @@ carousel.addEventListener('scroll', () => {
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === 'ArrowLeft') goTo(Math.max(0, activeIndex - 1));
     else if (e.key === 'ArrowRight') goTo(Math.min(slides.length - 1, activeIndex + 1));
 });

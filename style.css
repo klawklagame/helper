@@ -38,7 +38,9 @@
     --muted-2: #747474;
     --line: rgba(255, 255, 255, 0.09);
     --line-strong: rgba(255, 255, 255, 0.16);
-    --accent: #d7d7d7;
+    --accent: #7fdfa4;
+    --accent-dim: rgba(127, 223, 164, 0.12);
+    --accent-line: rgba(127, 223, 164, 0.35);
 
     --font-heading: "FC Krung Thep", "Noto Sans Thai", Tahoma, Helvetica, Arial, sans-serif;
     --font-body: "FC Maha Nakhon Flat", "Noto Sans Thai", Tahoma, Helvetica, Arial, sans-serif;
@@ -50,9 +52,9 @@
     --space-xl: 3rem;
     --space-2xl: 4.4rem;
 
-    --radius-sm: 3px;
-    --radius: 5px;
-    --radius-lg: 6px;
+    --radius-sm: 6px;
+    --radius: 10px;
+    --radius-lg: 14px;
     --dock-h: 72px;
 }
 
@@ -147,9 +149,23 @@ img {
     background: var(--surface-2);
 }
 .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
     color: var(--muted);
     font-family: var(--font-body);
     font-size: 1.15rem;
+    white-space: nowrap;
+}
+.hero-tag::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
 }
 .hero-title {
     margin: var(--space-md) 0 var(--space-sm);
@@ -214,6 +230,20 @@ img {
     margin-bottom: var(--space-md);
     padding-bottom: var(--space-md);
     border-bottom: 1px solid var(--line);
+}
+.helper-total {
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-left: auto;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--accent-line);
+    border-radius: 999px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
 }
 .helper-avatar {
     flex-shrink: 0;
@@ -297,7 +327,8 @@ img {
     text-align: right;
 }
 .helper-table tbody tr.hl {
-    background: rgba(255, 255, 255, 0.045);
+    background: var(--accent-dim);
+    box-shadow: inset 2px 0 0 var(--accent);
 }
 .helper-table tbody tr.hl b {
     color: var(--accent);
@@ -305,6 +336,18 @@ img {
 }
 .helper-table tbody tr:hover:not(.hl) {
     background: rgba(255, 255, 255, 0.025);
+}
+.helper-table tfoot td.num {
+    color: var(--accent);
+}
+.helper-note {
+    margin: var(--space-sm) 0 0;
+    color: var(--muted-2);
+    font-size: 1.15rem;
+}
+.helper-note b {
+    color: var(--accent);
+    font-weight: 700;
 }
 
 /* Footer */
@@ -342,9 +385,11 @@ img {
     gap: 0.4rem;
     padding: 0.4rem;
     border: 1px solid var(--line-strong);
-    border-radius: var(--radius-lg);
-    background: rgba(18, 18, 18, 0.94);
-    box-shadow: 0 10px 28px -20px rgba(0, 0, 0, 0.9);
+    border-radius: 999px;
+    background: rgba(18, 18, 18, 0.88);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 28px -14px rgba(0, 0, 0, 0.9);
 }
 .abtn {
     display: inline-flex;
@@ -353,7 +398,7 @@ img {
     justify-content: center;
     gap: 0.5rem;
     padding: 0.85rem 0.8rem;
-    border-radius: var(--radius);
+    border-radius: 999px;
     color: var(--muted);
     font-family: var(--font-body);
     font-size: 1.2rem;
@@ -391,9 +436,18 @@ img {
 }
 
 .reveal {
-    opacity: 1;
-    transform: none;
-    animation: none;
+    animation: fade-up 0.55s ease both;
+    animation-delay: calc(var(--i, 0) * 70ms);
+}
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 @media (max-width: 560px) {
@@ -408,14 +462,17 @@ img {
         margin-bottom: var(--space-lg);
     }
     .hero-tag {
-        max-width: 13rem;
-        text-align: right;
+        font-size: 1.05rem;
     }
     .card {
         padding: 1.6rem 1.2rem;
     }
     .helper-head {
         gap: 1rem;
+    }
+    .helper-total {
+        padding: 0.4rem 0.9rem;
+        font-size: 1.05rem;
     }
     .helper-avatar {
         width: 52px;
@@ -442,6 +499,9 @@ img {
 }
 
 @media (max-width: 480px) {
+    .helper-head {
+        flex-wrap: wrap;
+    }
     .alabel {
         display: none;
     }
