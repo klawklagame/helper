@@ -1,6 +1,6 @@
 const carousel = document.getElementById('carousel');
-const slides = [...document.querySelectorAll('.slide')];
-const buttons = [...document.querySelectorAll('.abtn')];
+const slides = [...document.querySelectorAll('.hp-slide')];
+const buttons = [...document.querySelectorAll('.kk-dock-tab')];
 
 const isGrid = () => window.matchMedia('(min-width: 1024px)').matches;
 const scrollBehavior = () =>
@@ -10,9 +10,7 @@ let activeIndex = 0;
 
 function setActive(index) {
     if (index === activeIndex) return;
-    buttons[activeIndex].classList.remove('active');
     buttons[activeIndex].removeAttribute('aria-current');
-    buttons[index].classList.add('active');
     buttons[index].setAttribute('aria-current', 'page');
     activeIndex = index;
 }

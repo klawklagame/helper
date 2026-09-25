@@ -2,480 +2,210 @@
 <html lang="th">
     <head>
         <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, viewport-fit=cover"
-        />
-        <meta
-            name="description"
-            content="รายละเอียดผู้ช่วยในเกม Clash of Clans — ผู้ช่วยห้องทดลอง ช่างก่อสร้างฝึกหัด นักแปรธาตุ"
-        />
-        <meta name="theme-color" content="#0d0d0d" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="description" content="รายละเอียดผู้ช่วยในเกม Clash of Clans — ผู้ช่วยห้องทดลอง ช่างก่อสร้างฝึกหัด นักแปรธาตุ" />
+        <meta name="theme-color" content="#0f0b11" />
         <meta name="color-scheme" content="dark" />
-        <title>ข้อมูลผู้ช่วย • KLAWKLA</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>ข้อมูลผู้ช่วย · KLAWKLA</title>
         <link rel="preconnect" href="https://klawkla.com" crossorigin />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap"
-        />
-        <link rel="stylesheet" href="style.css?v=ux-polish-1" />
+        <link rel="preload" href="fonts/FCKrungThep-Bold.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="fonts/FCMahaNakhonFlat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="stylesheet" href="kk/tokens.css?v=1" />
+        <link rel="stylesheet" href="kk/kk.css?v=1" />
+        <link rel="stylesheet" href="style.css?v=kk-1" />
     </head>
 
     <body>
-        <div class="wrap">
-            <header class="hero reveal" style="--i: 0">
-                <div class="container">
-                    <div class="hero-top">
-                        <a class="hero-brand" href="https://www.klawkla.com/">
-                            <img
-                                src="https://klawkla.com/content/images/2025/08/logo.webp"
-                                alt="แกล้วกล้า"
-                                width="36"
-                                height="36"
-                                fetchpriority="high"
-                                decoding="async"
-                            />
-                            <span>KLAWKLA</span>
-                        </a>
-                        <span class="hero-tag">เครื่องมือชาวแคลช</span>
-                    </div>
+        <svg class="kk-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="kk-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20"/><path d="M9.5 3 8 9l4 12 4-12-1.5-6"/></symbol>
+        </svg>
 
-                    <h1 class="hero-title">ข้อมูลผู้ช่วย</h1>
+        <header class="kk-topbar">
+            <a class="kk-brand" href="https://www.klawkla.com/">
+                <img class="kk-brand-mark" src="images/logo.webp" alt="แกล้วกล้า" width="32" height="32" />
+                <span class="kk-brand-name">KLAWKLA</span>
+            </a>
+            <p class="kk-topbar-title">ข้อมูลผู้ช่วย</p>
+        </header>
 
-                    <p class="hero-sub">
-                        รายละเอียดผู้ช่วยในเกม Clash of Clans —
-                        ผู้ช่วยห้องทดลอง · ช่างก่อสร้างฝึกหัด · นักแปรธาตุ
-                    </p>
-                </div>
-            </header>
-
-            <main
-                id="carousel"
-                class="carousel"
-                aria-label="ผู้ช่วยในเกมแบบสไลด์"
-            >
-                <section
-                    class="slide reveal"
-                    style="--i: 1"
-                    data-title="ผู้ช่วยห้องทดลอง"
-                    aria-label="ผู้ช่วยห้องทดลอง"
-                >
-                    <div class="container">
-                        <article class="card helper helper--lab">
-                            <div class="helper-head">
-                                <img
-                                    class="helper-avatar"
-                                    src="https://klawkla.com/content/images/2025/08/lab_assistant.png"
-                                    alt="ผู้ช่วยห้องทดลอง"
-                                    width="64"
-                                    height="64"
-                                    decoding="async"
-                                />
-                                <div class="helper-titleblock">
-                                    <span class="eyebrow">ผู้ช่วย 01</span>
-                                    <h2 class="helper-name">
-                                        ผู้ช่วยห้องทดลอง
-                                    </h2>
-                                    <p class="helper-desc">
-                                        ช่วยวิจัยในห้องทดลอง
-                                    </p>
-                                </div>
-                                <span class="helper-total">รวม 8,500 💎</span>
-                            </div>
-
-                            <div class="helper-table-wrap">
-                                <table class="helper-table">
-                                    <colgroup>
-                                        <col style="width: 10%" />
-                                        <col style="width: 30%" />
-                                        <col style="width: 30%" />
-                                        <col style="width: 30%" />
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>เลเวล</th>
-                                            <th>อัตรา</th>
-                                            <th>ค่าอัปเกรด 💎</th>
-                                            <th>บ้าน</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="num">1</td>
-                                            <td class="num">1x</td>
-                                            <td class="num">0</td>
-                                            <td class="num">9</td>
-                                        </tr>
-                                        <tr class="hl">
-                                            <td class="num">2</td>
-                                            <td class="num">2x</td>
-                                            <td class="num"><b>500</b></td>
-                                            <td class="num"><b>10</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">3</td>
-                                            <td class="num">3x</td>
-                                            <td class="num">500</td>
-                                            <td class="num">10</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">4</td>
-                                            <td class="num">4x</td>
-                                            <td class="num">500</td>
-                                            <td class="num"><b>11</b></td>
-                                        </tr>
-                                        <tr class="hl">
-                                            <td class="num">5</td>
-                                            <td class="num">5x</td>
-                                            <td class="num"><b>750</b></td>
-                                            <td class="num"><b>12</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">6</td>
-                                            <td class="num">6x</td>
-                                            <td class="num">750</td>
-                                            <td class="num">12</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">7</td>
-                                            <td class="num">7x</td>
-                                            <td class="num">750</td>
-                                            <td class="num"><b>13</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">8</td>
-                                            <td class="num">8x</td>
-                                            <td class="num">750</td>
-                                            <td class="num">13</td>
-                                        </tr>
-                                        <tr class="hl">
-                                            <td class="num">9</td>
-                                            <td class="num">9x</td>
-                                            <td class="num"><b>1,000</b></td>
-                                            <td class="num"><b>14</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">10</td>
-                                            <td class="num">10x</td>
-                                            <td class="num">1,000</td>
-                                            <td class="num">14</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">11</td>
-                                            <td class="num">11x</td>
-                                            <td class="num">1,000</td>
-                                            <td class="num"><b>15</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">12</td>
-                                            <td class="num">12x</td>
-                                            <td class="num">1,000</td>
-                                            <td class="num"><b>16</b></td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="row" colspan="2">
-                                                รวมเพชรทั้งหมด
-                                            </th>
-                                            <td class="num">8,500</td>
-                                            <td aria-hidden="true"></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <p class="helper-note">
-                                <b>แถวสีเขียว</b> = จุดที่ค่าอัปเกรดหรือระดับบ้านที่ต้องใช้เพิ่มขึ้น
-                            </p>
-                        </article>
-                    </div>
-                </section>
-
-                <section
-                    class="slide reveal"
-                    style="--i: 2"
-                    data-title="ช่างก่อสร้างฝึกหัด"
-                    aria-label="ช่างก่อสร้างฝึกหัด"
-                >
-                    <div class="container">
-                        <article class="card helper helper--builder">
-                            <div class="helper-head">
-                                <img
-                                    class="helper-avatar"
-                                    src="https://klawkla.com/content/images/2025/08/apprentice_builder.png"
-                                    alt="ช่างก่อสร้างฝึกหัด"
-                                    width="64"
-                                    height="64"
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                                <div class="helper-titleblock">
-                                    <span class="eyebrow">ผู้ช่วย 02</span>
-                                    <h2 class="helper-name">
-                                        ช่างก่อสร้างฝึกหัด
-                                    </h2>
-                                    <p class="helper-desc">
-                                        ช่วยอัปเกรดสิ่งก่อสร้าง
-                                    </p>
-                                </div>
-                                <span class="helper-total">รวม 6,500 💎</span>
-                            </div>
-
-                            <div class="helper-table-wrap">
-                                <table class="helper-table">
-                                    <colgroup>
-                                        <col style="width: 10%" />
-                                        <col style="width: 30%" />
-                                        <col style="width: 30%" />
-                                        <col style="width: 30%" />
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>เลเวล</th>
-                                            <th>อัตรา</th>
-                                            <th>ค่าอัปเกรด 💎</th>
-                                            <th>บ้าน</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="num">1</td>
-                                            <td class="num">1x</td>
-                                            <td class="num">500</td>
-                                            <td class="num">10</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">2</td>
-                                            <td class="num">2x</td>
-                                            <td class="num">500</td>
-                                            <td class="num">10</td>
-                                        </tr>
-                                        <tr class="hl">
-                                            <td class="num">3</td>
-                                            <td class="num">3x</td>
-                                            <td class="num"><b>750</b></td>
-                                            <td class="num"><b>11</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">4</td>
-                                            <td class="num">4x</td>
-                                            <td class="num">750</td>
-                                            <td class="num">11</td>
-                                        </tr>
-                                        <tr class="hl">
-                                            <td class="num">5</td>
-                                            <td class="num">5x</td>
-                                            <td class="num"><b>1,000</b></td>
-                                            <td class="num"><b>12</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">6</td>
-                                            <td class="num">6x</td>
-                                            <td class="num">1,000</td>
-                                            <td class="num">12</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">7</td>
-                                            <td class="num">7x</td>
-                                            <td class="num">1,000</td>
-                                            <td class="num"><b>13</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">8</td>
-                                            <td class="num">8x</td>
-                                            <td class="num">1,000</td>
-                                            <td class="num"><b>14</b></td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="row" colspan="2">
-                                                รวมเพชรทั้งหมด
-                                            </th>
-                                            <td class="num">6,500</td>
-                                            <td aria-hidden="true"></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <p class="helper-note">
-                                <b>แถวสีเขียว</b> = จุดที่ค่าอัปเกรดหรือระดับบ้านที่ต้องใช้เพิ่มขึ้น
-                            </p>
-                        </article>
-                    </div>
-                </section>
-
-                <section
-                    class="slide reveal"
-                    style="--i: 3"
-                    data-title="นักแปรธาตุ"
-                    aria-label="นักแปรธาตุ"
-                >
-                    <div class="container">
-                        <article class="card helper helper--alchemist">
-                            <div class="helper-head">
-                                <img
-                                    class="helper-avatar"
-                                    src="https://klawkla.com/content/images/2025/08/alchemist.png"
-                                    alt="นักแปรธาตุ"
-                                    width="64"
-                                    height="64"
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                                <div class="helper-titleblock">
-                                    <span class="eyebrow">ผู้ช่วย 03</span>
-                                    <h2 class="helper-name">นักแปรธาตุ</h2>
-                                    <p class="helper-desc">แปลงทรัพยากร</p>
-                                </div>
-                                <span class="helper-total">รวม 5,850 💎</span>
-                            </div>
-
-                            <div class="helper-table-wrap">
-                                <table class="helper-table">
-                                    <colgroup>
-                                        <col style="width: 10%" />
-                                        <col style="width: 25%" />
-                                        <col style="width: 25%" />
-                                        <col style="width: 20%" />
-                                        <col style="width: 20%" />
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>เลเวล</th>
-                                            <th>ทองคำ/น้ำม่วง</th>
-                                            <th>น้ำดำ</th>
-                                            <th>ค่าอัป 💎</th>
-                                            <th>บ้าน</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="num">1</td>
-                                            <td class="num">1,500,000</td>
-                                            <td class="num">10,000</td>
-                                            <td class="num">100</td>
-                                            <td class="num">11</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">2</td>
-                                            <td class="num">2,250,000</td>
-                                            <td class="num">15,000</td>
-                                            <td class="num">250</td>
-                                            <td class="num">12</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">3</td>
-                                            <td class="num">3,000,000</td>
-                                            <td class="num">20,000</td>
-                                            <td class="num">500</td>
-                                            <td class="num">13</td>
-                                        </tr>
-                                        <tr class="hl">
-                                            <td class="num">4</td>
-                                            <td class="num">4,500,000</td>
-                                            <td class="num">30,000</td>
-                                            <td class="num"><b>1,000</b></td>
-                                            <td class="num"><b>14</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">5</td>
-                                            <td class="num">6,000,000</td>
-                                            <td class="num">40,000</td>
-                                            <td class="num">1,000</td>
-                                            <td class="num">15</td>
-                                        </tr>
-                                        <tr class="hl">
-                                            <td class="num">6</td>
-                                            <td class="num">7,500,000</td>
-                                            <td class="num">50,000</td>
-                                            <td class="num"><b>1,500</b></td>
-                                            <td class="num"><b>16</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">7</td>
-                                            <td class="num">10,500,000</td>
-                                            <td class="num">70,000</td>
-                                            <td class="num">1,500</td>
-                                            <td class="num">17</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="row" colspan="3">
-                                                รวมเพชรทั้งหมด
-                                            </th>
-                                            <td class="num">5,850</td>
-                                            <td aria-hidden="true"></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <p class="helper-note">
-                                <b>แถวสีเขียว</b> = จุดที่ค่าอัปเกรดหรือระดับบ้านที่ต้องใช้เพิ่มขึ้น
-                            </p>
-                        </article>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="foot reveal" style="--i: 4">
-                <div class="container">
-                    <p class="credit">
-                        สร้างโดยผู้เล่นแคลชเพื่อผู้เล่นแคลช ·
-                        <a
-                            href="https://www.klawkla.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >klawkla.com</a
-                        >
-                    </p>
-                </div>
-            </footer>
+        <div class="kk-page">
+            <div class="kk-pagehead">
+                <p class="kk-eyebrow">ผู้ช่วย</p>
+                <h1 class="kk-pagehead-title">ข้อมูลผู้ช่วย</h1>
+                <p class="kk-pagehead-sub">
+                    รายละเอียดผู้ช่วยในเกม Clash of Clans — <span class="kk-keep">ผู้ช่วยห้องทดลอง</span> · <span class="kk-keep">ช่างก่อสร้างฝึกหัด</span> · <span class="kk-keep">นักแปรธาตุ</span>
+                </p>
+            </div>
         </div>
 
-        <nav class="dock" aria-label="สลับผู้ช่วย">
-            <div class="dock-inner">
-                <button
-                    class="abtn active"
-                    data-index="0"
-                    aria-current="page"
-                    type="button"
-                >
-                    <img
-                        src="https://klawkla.com/content/images/2025/08/lab_assistant.png"
-                        alt=""
-                        width="26"
-                        height="26"
-                        decoding="async"
-                    />
-                    <span class="alabel">ห้องทดลอง</span>
-                </button>
-                <button class="abtn" data-index="1" type="button">
-                    <img
-                        src="https://klawkla.com/content/images/2025/08/apprentice_builder.png"
-                        alt=""
-                        width="26"
-                        height="26"
-                        decoding="async"
-                    />
-                    <span class="alabel">ช่างก่อสร้าง</span>
-                </button>
-                <button class="abtn" data-index="2" type="button">
-                    <img
-                        src="https://klawkla.com/content/images/2025/08/alchemist.png"
-                        alt=""
-                        width="26"
-                        height="26"
-                        decoding="async"
-                    />
-                    <span class="alabel">นักแปรธาตุ</span>
-                </button>
-            </div>
+        <main id="carousel" class="hp-carousel" aria-label="ผู้ช่วยในเกมแบบสไลด์">
+            <section class="hp-slide" aria-labelledby="lab-name">
+                <article class="kk-card">
+                    <header class="hp-head">
+                        <img class="hp-portrait" src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="ผู้ช่วยห้องทดลอง" width="64" height="64" decoding="async" />
+                        <div class="hp-titles">
+                            <p class="kk-eyebrow">ผู้ช่วย 01</p>
+                            <h2 class="kk-card-title" id="lab-name">ผู้ช่วยห้องทดลอง</h2>
+                            <p class="hp-desc">ช่วยวิจัยในห้องทดลอง</p>
+                        </div>
+                        <span class="kk-amount kk-amount--gem kk-amount--pill"><span class="kk-amount-prefix">รวม</span>8,500<span class="kk-sr"> เพชร</span><svg class="kk-amount-icon" aria-hidden="true"><use href="#kk-gem"/></svg></span>
+                    </header>
+
+                    <div class="kk-table-wrap">
+                        <table class="kk-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">เลเวล</th>
+                                    <th scope="col">อัตรา</th>
+                                    <th scope="col"><span class="kk-th-icon hp-gem"><svg class="kk-icon" aria-hidden="true"><use href="#kk-gem"/></svg>ค่าอัปเกรด</span></th>
+                                    <th scope="col">บ้าน</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><span class="kk-lv">1</span></td><td>1x</td><td class="is-zero">0</td><td>9</td></tr>
+                                <tr class="is-key"><td><span class="kk-lv">2</span></td><td>2x</td><td>500</td><td>10</td></tr>
+                                <tr><td><span class="kk-lv">3</span></td><td>3x</td><td>500</td><td>10</td></tr>
+                                <tr><td><span class="kk-lv">4</span></td><td>4x</td><td>500</td><td><b>11</b></td></tr>
+                                <tr class="is-key"><td><span class="kk-lv">5</span></td><td>5x</td><td>750</td><td>12</td></tr>
+                                <tr><td><span class="kk-lv">6</span></td><td>6x</td><td>750</td><td>12</td></tr>
+                                <tr><td><span class="kk-lv">7</span></td><td>7x</td><td>750</td><td><b>13</b></td></tr>
+                                <tr><td><span class="kk-lv">8</span></td><td>8x</td><td>750</td><td>13</td></tr>
+                                <tr class="is-key"><td><span class="kk-lv">9</span></td><td>9x</td><td>1,000</td><td>14</td></tr>
+                                <tr><td><span class="kk-lv">10</span></td><td>10x</td><td>1,000</td><td>14</td></tr>
+                                <tr><td><span class="kk-lv">11</span></td><td>11x</td><td>1,000</td><td><b>15</b></td></tr>
+                                <tr><td><span class="kk-lv">12</span></td><td>12x</td><td>1,000</td><td><b>16</b></td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="2">รวมเพชรทั้งหมด</th>
+                                    <td><span class="kk-amount kk-amount--gem">8,500<span class="kk-sr"> เพชร</span><svg class="kk-amount-icon" aria-hidden="true"><use href="#kk-gem"/></svg></span></td>
+                                    <td aria-hidden="true"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <p class="kk-table-note">
+                        <span><i class="kk-swatch"></i>จุดที่ค่าอัปเกรดเพิ่มขึ้น</span>
+                        <span><b class="hp-bold-sample">ตัวหนา</b> = ระดับบ้านที่ต้องใช้เพิ่มขึ้น</span>
+                    </p>
+                </article>
+            </section>
+
+            <section class="hp-slide" aria-labelledby="builder-name">
+                <article class="kk-card">
+                    <header class="hp-head">
+                        <img class="hp-portrait" src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="ช่างก่อสร้างฝึกหัด" width="64" height="64" loading="lazy" decoding="async" />
+                        <div class="hp-titles">
+                            <p class="kk-eyebrow">ผู้ช่วย 02</p>
+                            <h2 class="kk-card-title" id="builder-name">ช่างก่อสร้างฝึกหัด</h2>
+                            <p class="hp-desc">ช่วยอัปเกรดสิ่งก่อสร้าง</p>
+                        </div>
+                        <span class="kk-amount kk-amount--gem kk-amount--pill"><span class="kk-amount-prefix">รวม</span>6,500<span class="kk-sr"> เพชร</span><svg class="kk-amount-icon" aria-hidden="true"><use href="#kk-gem"/></svg></span>
+                    </header>
+
+                    <div class="kk-table-wrap">
+                        <table class="kk-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">เลเวล</th>
+                                    <th scope="col">อัตรา</th>
+                                    <th scope="col"><span class="kk-th-icon hp-gem"><svg class="kk-icon" aria-hidden="true"><use href="#kk-gem"/></svg>ค่าอัปเกรด</span></th>
+                                    <th scope="col">บ้าน</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><span class="kk-lv">1</span></td><td>1x</td><td>500</td><td>10</td></tr>
+                                <tr><td><span class="kk-lv">2</span></td><td>2x</td><td>500</td><td>10</td></tr>
+                                <tr class="is-key"><td><span class="kk-lv">3</span></td><td>3x</td><td>750</td><td>11</td></tr>
+                                <tr><td><span class="kk-lv">4</span></td><td>4x</td><td>750</td><td>11</td></tr>
+                                <tr class="is-key"><td><span class="kk-lv">5</span></td><td>5x</td><td>1,000</td><td>12</td></tr>
+                                <tr><td><span class="kk-lv">6</span></td><td>6x</td><td>1,000</td><td>12</td></tr>
+                                <tr><td><span class="kk-lv">7</span></td><td>7x</td><td>1,000</td><td><b>13</b></td></tr>
+                                <tr><td><span class="kk-lv">8</span></td><td>8x</td><td>1,000</td><td><b>14</b></td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="2">รวมเพชรทั้งหมด</th>
+                                    <td><span class="kk-amount kk-amount--gem">6,500<span class="kk-sr"> เพชร</span><svg class="kk-amount-icon" aria-hidden="true"><use href="#kk-gem"/></svg></span></td>
+                                    <td aria-hidden="true"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <p class="kk-table-note">
+                        <span><i class="kk-swatch"></i>จุดที่ค่าอัปเกรดเพิ่มขึ้น</span>
+                        <span><b class="hp-bold-sample">ตัวหนา</b> = ระดับบ้านที่ต้องใช้เพิ่มขึ้น</span>
+                    </p>
+                </article>
+            </section>
+
+            <section class="hp-slide" aria-labelledby="alchemist-name">
+                <article class="kk-card">
+                    <header class="hp-head">
+                        <img class="hp-portrait" src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="นักแปรธาตุ" width="64" height="64" loading="lazy" decoding="async" />
+                        <div class="hp-titles">
+                            <p class="kk-eyebrow">ผู้ช่วย 03</p>
+                            <h2 class="kk-card-title" id="alchemist-name">นักแปรธาตุ</h2>
+                            <p class="hp-desc">แปลงทรัพยากร</p>
+                        </div>
+                        <span class="kk-amount kk-amount--gem kk-amount--pill"><span class="kk-amount-prefix">รวม</span>5,850<span class="kk-sr"> เพชร</span><svg class="kk-amount-icon" aria-hidden="true"><use href="#kk-gem"/></svg></span>
+                    </header>
+
+                    <div class="kk-table-wrap">
+                        <table class="kk-table hp-table--wide">
+                            <thead>
+                                <tr>
+                                    <th scope="col">เลเวล</th>
+                                    <th scope="col"><span class="kk-keep">ทองคำ/</span><wbr><span class="kk-keep">น้ำม่วง</span></th>
+                                    <th scope="col">น้ำดำ</th>
+                                    <th scope="col"><span class="kk-th-icon hp-gem"><svg class="kk-icon" aria-hidden="true"><use href="#kk-gem"/></svg>ค่าอัป</span></th>
+                                    <th scope="col">บ้าน</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><span class="kk-lv">1</span></td><td>1,500,000</td><td>10,000</td><td>100</td><td>11</td></tr>
+                                <tr><td><span class="kk-lv">2</span></td><td>2,250,000</td><td>15,000</td><td>250</td><td>12</td></tr>
+                                <tr><td><span class="kk-lv">3</span></td><td>3,000,000</td><td>20,000</td><td>500</td><td>13</td></tr>
+                                <tr class="is-key"><td><span class="kk-lv">4</span></td><td>4,500,000</td><td>30,000</td><td>1,000</td><td>14</td></tr>
+                                <tr><td><span class="kk-lv">5</span></td><td>6,000,000</td><td>40,000</td><td>1,000</td><td>15</td></tr>
+                                <tr class="is-key"><td><span class="kk-lv">6</span></td><td>7,500,000</td><td>50,000</td><td>1,500</td><td>16</td></tr>
+                                <tr><td><span class="kk-lv">7</span></td><td>10,500,000</td><td>70,000</td><td>1,500</td><td>17</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="3">รวมเพชรทั้งหมด</th>
+                                    <td><span class="kk-amount kk-amount--gem">5,850<span class="kk-sr"> เพชร</span><svg class="kk-amount-icon" aria-hidden="true"><use href="#kk-gem"/></svg></span></td>
+                                    <td aria-hidden="true"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <p class="kk-table-note">
+                        <span><i class="kk-swatch"></i>จุดที่ค่าอัปเกรดเพิ่มขึ้น</span>
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="kk-footer">
+            <p>สร้างโดยผู้เล่นแคลชเพื่อผู้เล่นแคลช · <a href="https://www.klawkla.com" target="_blank" rel="noopener noreferrer">klawkla.com</a></p>
+        </footer>
+
+        <nav class="kk-dock kk-dock--auto" aria-label="สลับผู้ช่วย">
+            <button class="kk-dock-tab" type="button" data-index="0" aria-current="page" aria-label="ผู้ช่วยห้องทดลอง">
+                <img src="https://klawkla.com/content/images/2025/08/lab_assistant.png" alt="" width="24" height="24" decoding="async" />
+                <span>ห้องทดลอง</span>
+            </button>
+            <button class="kk-dock-tab" type="button" data-index="1" aria-label="ช่างก่อสร้างฝึกหัด">
+                <img src="https://klawkla.com/content/images/2025/08/apprentice_builder.png" alt="" width="24" height="24" decoding="async" />
+                <span>ช่างก่อสร้าง</span>
+            </button>
+            <button class="kk-dock-tab" type="button" data-index="2" aria-label="นักแปรธาตุ">
+                <img src="https://klawkla.com/content/images/2025/08/alchemist.png" alt="" width="24" height="24" decoding="async" />
+                <span>นักแปรธาตุ</span>
+            </button>
         </nav>
 
-        <script src="script.js" defer></script>
+        <script src="script.js?v=kk-1" defer></script>
     </body>
 </html>

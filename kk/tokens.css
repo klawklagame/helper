@@ -1,0 +1,90 @@
+/* KLAWKLA Tools · tokens
+   Generated from the design system's tokens.json (https://claude.ai/artifact/WpiEa6LAYNd1e4GtP4KVSq).
+   Change values in the design system, then copy this file to every tool. */
+
+@font-face { font-family: "FC Krung Thep"; src: url("../fonts/FCKrungThep-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "FC Maha Nakhon Flat"; src: url("../fonts/FCMahaNakhonFlat-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "FC Maha Nakhon Flat"; src: url("../fonts/FCMahaNakhonFlat-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+
+:root {
+  color-scheme: dark;
+  --bg: #0f0b11;
+  --surface: #19141c;
+  --raised: #241d28;
+  --raised-hover: #2e2633;
+  --line: #302935;
+  --line-strong: #413847;
+  --line-control: #6d6374;
+  --edge: #070508;
+  --bevel: #ffffff14;
+  --scrim: #0f0b11cc;
+  --ink: #f5f1f8;
+  --ink-muted: #b7adbd;
+  --ink-subtle: #9b90a2;
+  --ink-disabled: #5d5463;
+  --elixir: #f72585;
+  --elixir-edge: #8f154d;
+  --elixir-text: #ff6fae;
+  --elixir-soft: #3f172e;
+  --on-elixir: #19050f;
+  --gem: #3fdc8f;
+  --gem-soft: #1e2e2b;
+  --sky: #7cc0ff;
+  --violet: #c691ff;
+  --sun: #ffd94a;
+  --amber: #ffb84a;
+  --coral: #ff7a59;
+  --silver: #beb5c5;
+  --ore-shiny: var(--sky);
+  --ore-glowy: var(--violet);
+  --ore-starry: var(--sun);
+  --good: var(--gem);
+  --good-soft: var(--gem-soft);
+  --warn: var(--amber);
+  --warn-soft: #372922;
+  --bad: #ff6b6b;
+  --bad-soft: #371f26;
+  --shadow-float: 0 16px 40px -12px #000000d9;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --press-depth: 3px;
+  --press-travel: 2px;
+  --content-max: 960px;
+  --rail-width: 300px;
+  --topbar-height: 56px;
+  --tap-min: 44px;
+  --bp-compact: 480px;
+  --bp-wide: 720px;
+  --bp-desktop: 1024px;
+  --z-topbar: 10;
+  --z-dock: 50;
+  --z-dialog: 100;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-press: 90ms;
+  --dur-ui: 160ms;
+  --dur-enter: 480ms;
+  --font-display: "FC Krung Thep", "Noto Sans Thai", Tahoma, sans-serif;
+  --font-text: "FC Maha Nakhon Flat", "Noto Sans Thai", Tahoma, sans-serif;
+}
+
+.t-hero { font-family: var(--font-display); font-size: 44px; line-height: 54px; font-weight: 700; letter-spacing: -0.01em; }
+.t-title { font-family: var(--font-display); font-size: 30px; line-height: 38px; font-weight: 700; }
+.t-heading { font-family: var(--font-display); font-size: 22px; line-height: 30px; font-weight: 700; }
+.t-num-xl { font-family: var(--font-display); font-size: 40px; line-height: 44px; font-weight: 700; }
+.t-num { font-family: var(--font-display); font-size: 28px; line-height: 32px; font-weight: 700; }
+.t-button { font-family: var(--font-display); font-size: 16px; line-height: 20px; font-weight: 700; }
+.t-label { font-family: var(--font-display); font-size: 13px; line-height: 18px; font-weight: 700; letter-spacing: 0.04em; }
+.t-body { font-family: var(--font-text); font-size: 17px; line-height: 28px; font-weight: 400; }
+.t-small { font-family: var(--font-text); font-size: 15px; line-height: 24px; font-weight: 400; }
+.t-caption { font-family: var(--font-text); font-size: 14px; line-height: 22px; font-weight: 400; }
